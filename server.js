@@ -369,6 +369,12 @@ app.get("/get-product", (req, res) => {
 
 
 
-const port = process.env.PORT || 4044;
-app.listen(port);
-console.log( `server is running in port ${port}`)
+const port = process.env.PORT || 3000;
+
+const app = express();
+
+// ...Express setup code...
+
+app.listen(port, () => {
+    console.log(`App listening at http://localhost:${port}`);
+});
