@@ -371,7 +371,6 @@ app.get("/get-product", (req, res) => {
 
 const port = process.env.PORT || 3000;
 
-const app = express();
 
 // ...Express setup code...
 
