@@ -367,6 +367,8 @@ app.get("/get-product", (req, res) => {
 
 });
 
-app.listen(2000, () => {
-  console.log("Server is Runing On port 2000");
-});
+
+
+const port = process.env.PORT || 4044;
+app.listen(port);
+console.log( `server is running in port ${port}`)
